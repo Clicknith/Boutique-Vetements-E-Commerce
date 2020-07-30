@@ -51,7 +51,7 @@ require_once("inc/header.php");
                 </li>
         </ul>
         
-            <input class="btn btn-outline-secondary mt-5" disabled id="ajoutPanier" type="submit" name="ajout_panier" style="width:100%;" value="Ajouter au Panier">
+            <input class="btn btn-outline-info bg-light font-weight-bolder mt-5" disabled id="ajoutPanier" type="submit" name="ajout_panier" style="width:100%;" value="Ajouter au Panier">
         </form>
         <a href="index.php?categorie=<?php echo $produit["categorie"]; ?>" class="badge badge-dark"> Retour vers la catégorie </a>
     </div>

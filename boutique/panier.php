@@ -119,7 +119,7 @@
     }
 
     // Début de ma table
-    $content .= '<table class="table">
+    $content .= '<table class="table bg-info">
         <thead class="thead-light">
             <tr>
             <th scope="col">Titre</th>
@@ -162,7 +162,7 @@
                 $content .= '<input class="btn btn-outline-secondary" type="submit" name="payer" value="Payer">';
                 $content .= '</form>';
             } else {
-                $content .= '<div style="float:right"><p> Veuillez-vous connecter pour payer </p>';
+                $content .= '<div style="float:right"><p class="bg-info text-light"> Veuillez-vous connecter pour payer </p>';
                 $content .= '<a href="connexion.php" class="badge badge-dark"> Se connecter </a></div>';
             }
 

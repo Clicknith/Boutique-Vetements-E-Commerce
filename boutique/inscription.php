@@ -64,7 +64,7 @@
 require_once("inc/header.php");
 ?>  
 
-    <div class="row col-md-10 mx-auto justify-content-center">
+    <div class="row col-md-10 mx-auto justify-content-center bg-info">
 
         <?php echo $content; ?>
 
