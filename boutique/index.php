@@ -16,7 +16,7 @@
     $r = $pdo->query("SELECT DISTINCT(categorie) FROM produit");
     // itérer à l'intérieur et générer une liste
     $content .= '<div class="col-md-2">
-    <ul class="list-group">';
+    <ul class="list-group mt-3">';
     while($categorie = $r->fetch(PDO::FETCH_ASSOC)){
         $content .= "<li class=\"list-group-item\"> <a href=\"?categorie=$categorie[categorie]\">" . $categorie["categorie"] . " </a> </li>";
         // $content .= '<li class="list-group-item"> <a href="?categorie=' . $categorie["categorie"] .'">' . $categorie["categorie"] . '</a> </li>';
@@ -42,7 +42,7 @@
         while($produit = $r->fetch(PDO::FETCH_ASSOC)) { // j'itère dans mon PDOSTATEMENT EN FETCHANT LES DONNÉES EN ITÉRANT DANS CHAQUE ARRAY GÉNÉRÉ PAR LE FETCH
 
             // Génération de card boostrap à chaque fois qu'un produit est récupéré
-            $content .= '<div class="card col-md-3">
+            $content .= '<div class="card col-md-3 mr-5 mt-3">
                             <img src="' . $produit["photo"]  . '" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">' . $produit["titre"]  . '</h5>

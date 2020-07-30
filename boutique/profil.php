@@ -15,9 +15,9 @@ require_once("inc/header.php");
     <!-- Condition sur le message de bienvenu -->
 
     <?php if($_SESSION["membre"]["civilite"] == "m") { ?>
-            <h2> Bonjour Mr <?php echo $_SESSION["membre"]["nom"];  ?>, bienvenu sur votre espace personnel ! </h2>
+            <h2 class="text-light"> Bonjour Mr <?php echo $_SESSION["membre"]["nom"];  ?>, bienvenu sur votre espace personnel ! </h2>
     <?php } else { ?>
-        <h2> Bonjour Mme <?php echo $_SESSION["membre"]["nom"];  ?>, bienvenue sur votre espace personnel ! </h2>
+        <h2 class="text-light"> Bonjour Mme <?php echo $_SESSION["membre"]["nom"];  ?>, bienvenue sur votre espace personnel ! </h2>
     <?php } ?>
 
     <div class="card" style="width: 18rem;">
@@ -25,9 +25,9 @@ require_once("inc/header.php");
     <!-- Condition sur la photo de profil -->
 
     <?php if($_SESSION["membre"]["civilite"] == "m") { ?>
-        <img src="photo/avatar_male.png" class="card-img-top" alt="...">
+        <img src="photo/Avatar_male.jpg" class="card-img-top" alt="...">
     <?php } else { ?>
-        <img src="photo/avatar_female.png" class="card-img-top" alt="...">
+        <img src="photo/Avatar_female.jpg" class="card-img-top" alt="...">
     <?php } ?>
 
     <div class="card-body">
